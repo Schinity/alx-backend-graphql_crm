@@ -1,4 +1,13 @@
 from celery.schedules import crontab
+
+
+
+
+INSTALLED_APPS = [
+    # Local apps
+    'django_crontab',
+    'django_celery_beat',
+]
 CRONJOBS = [
     ('*/5 * * * *', 'crm.cron.log_crm_heartbeat'),
     ('0 */12 * * *', 'crm.cron.update_low_stock'),

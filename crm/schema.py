@@ -207,6 +207,7 @@ from graphene_django.filter import DjangoFilterConnectionField
 from .models import Customer, Product, Order
 from django.db.models import Q
 from .models import Product
+from crm.models import Product
 from graphene_django.types import DjangoObjectType
 
 
